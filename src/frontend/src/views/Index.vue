@@ -186,15 +186,12 @@ export default {
       pizza,
       user,
       misc,
-      selectedIngredients: [],
+      selectedIngredients: [
+        pizza.ingredients[1],
+        pizza.ingredients[4],
+        pizza.ingredients[5],
+      ],
     };
-  },
-  created() {
-    this.selectedIngredients = [
-      this.pizza.ingredients[1],
-      this.pizza.ingredients[4],
-      this.pizza.ingredients[5],
-    ];
   },
 };
 </script>
